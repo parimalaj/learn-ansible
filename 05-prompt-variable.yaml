@@ -1,0 +1,21 @@
+- name: "prompt variables"
+  hosts: localhost
+  connection: local
+
+  vars_prompt:
+    - name: username
+      prompt: "Enter your username"
+      private: false
+
+    - name: password
+      prompt: "Enter your password"
+      private: true
+
+  tasks:
+    - name: "print welcome"
+      debug:
+        msg: "Welcome, {{ username }}!"
+
+    - name: "confirm password"
+      debug:
+        msg: "Password received."
