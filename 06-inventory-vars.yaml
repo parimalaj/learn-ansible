@@ -1,0 +1,7 @@
+ - name: "inventory variables"
+   hostes: web
+
+   tasks:
+     - name: "print the invertory variables"
+       debug:
+          msg: "environment is {{ env }} and the connected user is {{ ansible_user }}"
