@@ -1,5 +1,5 @@
  - name: "inventory variables"
-   hostes: web
+   hosts: web
 
    tasks:
      - name: "print the invertory variables"
