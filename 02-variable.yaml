@@ -1,0 +1,14 @@
+- name: "Learn Variables in ansible"
+  hosts: localhost
+  connection: local
+
+  vars:
+   - name: "Parimala"
+     course: "Devops"
+     duration: "120hrs"
+
+  tasks:
+   - name: "print variable"
+     debug:
+       msg: "My name is {{ name }} and I am learning {{ course}} and the duration is {{ duaration }}"  
+
