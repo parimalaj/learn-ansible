@@ -12,8 +12,9 @@
       debug:
         msg: "My name is {{ name }} and I am learning {{ course }} and the duration is {{ duration }}"
     
-  tasks: 
-      - name: "print variable"
+
+    - name: "print variable"
+      vars:
         course: "Ansible"
         debug:
           msg: "My name is {{ name }} and I am learning {{ course }} and the duration is {{ duration }}"
