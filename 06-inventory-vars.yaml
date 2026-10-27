@@ -2,6 +2,6 @@
    hosts: web
 
    tasks:
-     - name: "print the invertory variables"
+     - name: "print the inventory variables"
        debug:
-          msg: "environment is {{ env }} and the connected user is {{ ansible_user }}"
+         msg: "Environment is {{ env }} and the connected user is {{ ansible_user }}"
