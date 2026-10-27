@@ -3,7 +3,7 @@
   connection: local
 
   vars:
-   - name: "Parimala"
+     name: "Parimala"
      course: "Devops"
      duration: "120hrs"
 
