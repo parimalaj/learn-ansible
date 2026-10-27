@@ -7,12 +7,12 @@
     course: "Devops"
     duration: "120hrs"
 
-  task1: 
+  tasks: 
     - name: "print variable"
       debug:
         msg: "My name is {{ name }} and I am learning {{ course }} and the duration is {{ duration }}"
     
-  task2: 
+  tasks: 
       - name: "print variable"
         course: "Ansible"
         debug:
