@@ -1,11 +1,15 @@
-- name: "load the sudent file"
-  hosts: local host
+- name: "load the student file"
+  hosts: localhost
   connection: local
 
   vars_files:
-    -student-info.yaml
+    - student-info.yaml
 
   tasks:
-    - name: "print the student info"    
+    - name: "print the student info"
       debug:
-         msg: "My name is {{ name }} and I am {{ age }} years old and my skills are {{ skills[0] }}"  
+        msg: "My name is {{ name }} and I am {{ age }} years old and my first skill is {{ skills[0] }}"
+
+    - name: "print all skills"
+      debug:
+        var: skills 
