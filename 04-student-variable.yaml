@@ -6,5 +6,7 @@
     - name: "load the student file"
       include_vars:
         file: student-info.yaml
+
+    - name: "print the student info"    
       debug:
          msg: "My name is {{ name }} and I am {{ age }} years old and my skills are {{ skills }}"  
