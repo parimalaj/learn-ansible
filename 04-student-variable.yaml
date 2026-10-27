@@ -2,11 +2,10 @@
   hosts: local host
   connection: local
 
-  tasks:
-    - name: "load the student file"
-      include_vars:
-        file: student-info.yaml
+  vars_files:
+    file: student-info.yaml
 
+  tasks:
     - name: "print the student info"    
       debug:
          msg: "My name is {{ name }} and I am {{ age }} years old and my skills are {{ skills }}"  
