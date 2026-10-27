@@ -10,5 +10,5 @@
   tasks:
    - name: "print variable"
      debug:
-       msg: "My name is {{ name }} and I am learning {{ course}} and the duration is {{ duaration }}"  
+       msg: "My name is {{ name }} and I am learning {{ course }} and the duration is {{ duration }}"  
 
