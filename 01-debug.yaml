@@ -1,0 +1,8 @@
+-name: "first program"
+hosts: localhost
+connection: local
+
+tasks:
+ -name: "Print Hello world"
+ debug:
+   msg: "Hello world"
