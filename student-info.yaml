@@ -1,0 +1,6 @@
+- name: parimala
+  age: 30
+  skills:
+    - Devops
+    - Ansible
+    - Docker
